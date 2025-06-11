@@ -41,6 +41,7 @@ const addTask = async () => {
 }
 
 const updateTask = async (task) => {
+  console.log(task)
   await axios.put('${API}/${task.id}', task)
   fetchTasks()
 }
